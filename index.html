@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>EPAM TASK-JS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card bg-light">
+            <article class="card-body mx-auto" style="max-width: 400px;">
+                <h4 class="card-title mt-3 mb-3 text-center"><strong>Register</strong></h4>
+                <form onsubmit="pn();CheckPass();">
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                     </div>
+                    <input name="" class="form-control" placeholder="Full name" type="text" required>
+                </div>
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                     </div>
+                    <input name="" class="form-control" placeholder="Email address" type="email" required >
+                </div>
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                    </div>
+                    <select class="custom-select" style="max-width: 80px;">
+                        <option selected="">+91</option>
+                    </select>
+                    <input id="phno" class="form-control" placeholder="Phone number" type="text" required >
+
+                </div>
+                <div class=" error">
+                        <p class="text-danger" id="phnoerror"></p>
+                </div>
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-calendar" ></i> </span>
+                    </div>
+                    <input placeholder="Date of birth" type="text" class="form-control" onfocus="this.type='date'" onblur="this.type='text'" required>
+                   
+                </div>
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-venus-mars"></i> </span>
+                    </div>
+                    <select class="custom-select form-control" style="max-width:100%;">
+                        <option selected="">Male</option>
+                        <option >Female</option>
+                        <option >Prefer not to say</option>
+                    </select>
+                </div>
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                    </div>
+                    <input id="pass" class="form-control" placeholder="Create password" type="password" required >
+                </div> 
+                <div class="error">
+                    <p class="text-danger" id="passerror"></p>
+                </div>
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                    </div>
+                    <input id="pass2" class="form-control" placeholder="Repeat password" type="password" required >
+                </div>
+                <div class="error">
+                    <p class="text-danger" id="matcherror"></p>
+                </div>                                       
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block"> Register  </button>
+                </div>   
+                <p class="text-center">Have an account? <a href="">Log In</a> </p>    
+                <p class="divider-text">
+                    <span class="bg-light">OR</span>
+                </p>                                                             
+            </form>
+                <p>
+                    <a href="" class="btn btn-block btn-google"> <i class="fa fa-google"></i>   Google</a>
+                    <a href="" class="btn btn-block btn-facebook"> <i class="fa fa-facebook-f"></i>  Facebook</a>
+                    <a href="" class="btn btn-block btn-epam">&lt;EPAM LOGIN&gt;</a>
+                </p>
+               
+            </article>
+            </div> 
+            
+    </div>
+</body>
+</html>
